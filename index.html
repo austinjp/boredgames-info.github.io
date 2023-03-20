@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- Disable 300ms delay in Chrome and Firefox -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Polyfill.io: automatic polyfills for many features/browsers -->
+    <script>
+      if (navigator) {
+        if (navigator.onLine) {
+          var p = document.createElement('script');
+          p.src = "//polyfill.io/v3/polyfill.min.js?flags=gated&features=default";
+          p.async = true;
+          p.defer = true;
+          p.setAttribute('crossorigin','anonymous')
+          document.head.appendChild(p);
+        }
+      }
+    </script>
+
+    <!-- HTML5shiv: HTML5 elements for older versions of IE -->
+    <!-- respond.js: media-queries for older versions of IE -->
+    <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js" integrity="sha512-RCtZMoZSQ5csGk1zBPGImR8OY+NJfe0IsaFrDD649yYrSBgCf3kYiP79AfWT9/idKbpWYteQmswChxbXC7YHig==" crossorigin="anon>
+    <![endif]-->
+
+    <style>/* Disable 300 millisecond delay in IE */
+html{touch-action:manipulation;-ms-touch-action:manipulation}
+
+/* Normalize *
+/* [type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText};outline-offset:-2px;h1{margin:.67em 0} */
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+/* Semantic UI reset */
+*,*:before,*:after{box-sizing:inherit}html{box-sizing:border-box}input[type="text"],input[type="email"],input[type="search"],input[type="password"]{-webkit-appearance:none;-moz-appearance:none}
+
+
+h1,h2,h3,h4,h5,h6 { padding-top: 0; margin-top: 0 }
+html,body,div#root { position: relative; }
+body {
+  overflow-y: scroll;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.4px;
+  line-height: 2;
+}
+
+
+h1#site-title {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+}
+@media (max-width: 550px) {
+  h1#site-title {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Grid, kudos https://css-tricks.com/dont-overthink-flexbox-grids/ */
+
+.grid { display: flex }
+.col { flex: 1 }
+@media (max-width: 550px) {
+  .grid {
+    display: block
+  }
+}
+
+
+/* Padding, spacing etc */
+
+.page-wrapper {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 60rem;
+}
+
+</style>
+
+    <meta name="description" content="boredgames.info">
+    <meta name="og:description" content="boredgames.info">
+    <meta name="og:title" content="boredgames.info">
+    <meta name="og:site_name" content="boredgames.info">
+
+    <meta name="author" content="boredgames.info">
+
+    <meta name="og:locale" content="en_GB">
+
+    <link rel="canonical" href="//boredgames.info">
+
+    <meta name="theme-color" content="#0ad">
+
+    <title>boredgames.info</title>
+
+  </head>
+  <body>
+    <div class="page-wrapper">
+
+    <div class="grid">
+      <div class="col">
+        <h1 id="site-title">boredgames.info</h1>
+      </div>
+    </div>
+      <div class="grid" style="margin-top: 2rem">
+        <div class="col">
+          <p></p>
+        </div>
+      </div>
+      <footer id="nav-footer" class="page-footer"></footer>
+    </div>
+  </body>
+</html>
